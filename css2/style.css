@@ -1,0 +1,13 @@
+#heading {
+  color: green;
+}
+#para1 {
+  color: Idarkmagenta;
+}
+.heading Two {
+  color: blueviolet;
+  font-style: italic;
+}
+a:hover {
+  font-weight: 600;
+}
