@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS HW 4 - Complete Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="homework-container">
+      <!-- Master Header -->
+      <h1 class="main-title">CSS HW 4</h1>
+
+      <!-- Instructions Module Section -->
+      <section class="info-section">
+        <h2 class="orange-heading">Instructions:</h2>
+        <ol class="standard-list">
+          <li>This set is about practicing CSS using Flexbox.</li>
+          <li>
+            Use Internal or External CSS to solve these. Do not write inline
+            styles.
+          </li>
+          <li>
+            Use your own dimensions and make your layouts look as close as
+            possible to the images provided in each question.
+          </li>
+        </ol>
+      </section>
+
+      <!-- Homework Problems Section -->
+      <section class="info-section">
+        <h2 class="orange-heading">Questions:</h2>
+
+        <ol class="standard-list complex-counter">
+          <li>
+            <p class="question-description">
+              Create a layout for a contact form that includes fields for name,
+              email, message, and a submit button. The form should be centered
+              horizontally on the page and the fields should be arranged
+              vertically with appropriate spacing between them. The form should
+              also have a label for each field. Create a layout as close to the
+              image shown below.
+            </p>
+
+            <!-- Target Assignment Visual Implementation Form Box -->
+            <form class="contact-form-layout">
+              <!-- Input Group Unit -->
+              <div class="field-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" autocomplete="off" />
+              </div>
+
+              <!-- Input Group Unit -->
+              <div class="field-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" autocomplete="off" />
+              </div>
+
+              <!-- Textarea Input Group Unit -->
+              <div class="field-group">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="6"></textarea>
+              </div>
+
+              <!-- Action Submit Component Button -->
+              <button type="submit" class="form-submit-btn">Submit</button>
+            </form>
+          </li>
+
+          <!-- Question 2: Login Form Layout -->
+          <li>
+            <p class="question-description">
+              Create a layout for a login form that includes input fields for
+              the user's email and password, a "Login" button, and a "Forgot
+              Password?" link. The layout should be centered horizontally on the
+              page, and the input fields and button should be arranged
+              vertically with some spacing between them. Create a layout as
+              close to the image shown below.
+            </p>
+
+            <!-- Login Form Box Shell -->
+            <form class="login-form-layout">
+              <!-- Form Centered Title -->
+              <h3 class="login-title">Login</h3>
+
+              <!-- Email Input Group -->
+              <div class="login-field-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" autocomplete="off" />
+              </div>
+
+              <!-- Password Input Group -->
+              <div class="login-field-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" />
+              </div>
+
+              <!-- Vibrant Blue Submit Action Button -->
+              <button type="submit" class="login-btn">Login</button>
+
+              <!-- Forgot Password Link Element -->
+              <a href="#" class="forgot-link">Forgot Password?</a>
+            </form>
+          </li>
+
+          <!-- Question 3: Photo Gallery Layout -->
+          <li>
+            <p class="question-description">
+              Create a layout for a photo gallery with a header, a navigation
+              bar, and a grid of photos. The navigation bar should have links to
+              filter the photos by category (no need to code the functionality).
+              The grid of photos should have three columns, with each photo
+              being a square. The layout should be centered horizontally on the
+              page and the cards should not go out of the screen when the screen
+              size is reduced. You can add your own images. Create a layout as
+              close to the image shown below.
+            </p>
+
+            <!-- Photo Gallery Container Layout -->
+            <div class="gallery-wrapper">
+              <!-- Serif Main Gallery Header -->
+              <h1 class="gallery-header">Photo Gallery</h1>
+
+              <!-- Filter Categorization Navbar Row -->
+              <nav class="gallery-filter-nav">
+                <a href="#" class="filter-link active-filter">All</a>
+                <a href="#" class="filter-link">Nature</a>
+                <a href="#" class="filter-link">Birds</a>
+                <a href="#" class="filter-link">Animals</a>
+              </nav>
+
+              <!-- Responsive 3-Column Image Card Grid -->
+              <div class="gallery-grid">
+                <div class="gallery-card"><span>Nature</span></div>
+                <div class="gallery-card"><span>Birds</span></div>
+                <div class="gallery-card"><span>Animals</span></div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Question 4: Pricing Table Layout -->
+          <li>
+            <p class="question-description">
+              Create a layout for a pricing table that shows three pricing plans
+              side by side, with the plan names, prices, and features listed for
+              each plan. Each plan should have a button for users to sign up for
+              that plan. The layout should be centered horizontally on the page
+              and the price cards should not go out of the screen when the
+              screen size is reduced. Create a layout as close to the image
+              shown below.
+            </p>
+
+            <!-- Pricing Table Container Layout -->
+            <div class="pricing-table-wrapper">
+              <!-- Basic Plan Card -->
+              <div class="price-card">
+                <div class="badge-box">1 month Free</div>
+                <h3 class="plan-name">Basic Plan</h3>
+                <div class="plan-cost">$9.99/mo</div>
+                <hr class="card-divider" />
+                <ul class="feature-lines">
+                  <li>Ad-free music listening</li>
+                  <li>Download 10k songs/device</li>
+                  <li>Login from 3 devices</li>
+                </ul>
+                <button class="signup-btn">Sign Up</button>
+              </div>
+
+              <!-- Pro Plan Card -->
+              <div class="price-card">
+                <div class="badge-box">1 month Free</div>
+                <h3 class="plan-name">Pro Plan</h3>
+                <div class="plan-cost">$19.99/mo</div>
+                <hr class="card-divider" />
+                <ul class="feature-lines">
+                  <li>Ad-free music listening</li>
+                  <li>Download 20k songs/device</li>
+                  <li>Login from 5 devices</li>
+                </ul>
+                <button class="signup-btn">Sign Up</button>
+              </div>
+
+              <!-- Enterprise Plan Card -->
+              <div class="price-card">
+                <div class="badge-box">1 month Free</div>
+                <h3 class="plan-name">Enterprise Plan</h3>
+                <div class="plan-cost">$59.99/mo</div>
+                <hr class="card-divider" />
+                <ul class="feature-lines">
+                  <li>Ad-free music listening</li>
+                  <li>Download 40k songs/device</li>
+                  <li>Login from unlimited devices</li>
+                </ul>
+                <button class="signup-btn">Sign Up</button>
+              </div>
+            </div>
+          </li>
+
+          <!-- Question 5: Review Order Layout -->
+          <li>
+            <p class="question-description">
+              Create a layout for Review Order with items, quantity, price,
+              pricing breakdown and a button to place order. Create a layout as
+              close to the image shown below.
+            </p>
+
+            <!-- Review Order Master Box Component -->
+            <div class="review-order-card">
+              <h1 class="order-title">Review Order</h1>
+
+              <!-- Table Structural Layout Header Row -->
+              <div class="order-table-header">
+                <span class="col-item">ITEM</span>
+                <span class="col-qty">QTY</span>
+                <span class="col-total">TOTAL</span>
+              </div>
+
+              <!-- Main Dynamic Shopping Item Block -->
+              <div class="product-item-row">
+                <div class="product-visual-meta">
+                  <div class="item-thumb-box">
+                    <img src="https://placehold.co/50x50?text=50x50" />
+                  </div>
+                  <div class="item-description-text">
+                    <p class="item-main-title">
+                      Limited addition cactus print bag
+                    </p>
+                    <p class="item-sub-details">1 litre, green color</p>
+                  </div>
+                </div>
+                <div class="item-qty-value">1</div>
+                <div class="item-total-value">INR 999</div>
+              </div>
+
+              <!-- Pricing Calculation Rows Summary Matrix -->
+              <div class="pricing-breakdown-matrix">
+                <div class="breakdown-row">
+                  <span class="breakdown-label">Subtotal</span>
+                  <span class="breakdown-price">INR 999</span>
+                </div>
+                <div class="breakdown-row">
+                  <span class="breakdown-label">GST</span>
+                  <span class="breakdown-price">INR 179</span>
+                </div>
+                <div class="breakdown-row total-highlight-row">
+                  <span class="breakdown-label">Grand Total</span>
+                  <span class="breakdown-price">INR 1178</span>
+                </div>
+              </div>
+
+              <!-- Primary Green Action Button CTA Element -->
+              <button type="button" class="place-order-btn">PLACE ORDER</button>
+
+              <!-- Footer Security Tag Anchor Line -->
+              <div class="security-footer-tag">Cart Secured by Razorpay</div>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

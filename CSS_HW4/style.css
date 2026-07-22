@@ -1,0 +1,614 @@
+/* Core Page Architecture Settings */
+body {
+  margin: 0;
+  padding: 50px 30px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+/* Base Wrapper Matrix Layout Restricting Page Span Elements Width */
+.homework-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ultra Bold Master Layout Title Banner Text styling */
+.main-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+}
+
+/* Flexible Section Box Block Wrapper Layout */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+/* Distinct Primary Burnt-Orange Content Section Titles */
+.orange-heading {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #d35400; /* Warm Accent Shade matching the document prompts precisely */
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Universal Standardized Spacing Sequence Lists Elements */
+.standard-list {
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.standard-list li {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: #2c3e50;
+}
+
+/* Form block problem statement formatting specification */
+.question-description {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Form Container Card - Matches precise mockup box parameters */
+.contact-form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 22px; /* Direct inner line tracking gap between adjacent field layers */
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto; /* Flex layout trick ensuring true horizontal centering alignment */
+  border: 1px solid #b3b3b3; /* Form shell layout frame tracing outline stroke */
+  padding: 35px 25px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+/* Input Fields Vertical Stack Blocks */
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Gap spacing distance between item labels and inputs box grids */
+}
+
+.field-group label {
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+/* Inputs element visual design mapping properties */
+.field-group input,
+.field-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px; /* Smooth light corners contour frame radii matches blueprint */
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.field-group textarea {
+  resize: none; /* Fixes height scale dimension tracking fields */
+  min-height: 110px;
+}
+
+/* Charcoal Primary Action Submission Button Block Component */
+.form-submit-btn {
+  width: 100%;
+  background-color: #2b2b2b; /* Deep low-light gray charcoal overlay tone match */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 10px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 5px; /* Adds a slight extra breathing path buffer clearance */
+  box-sizing: border-box;
+}
+
+/* Question 2: Wide Card Container Wrapper Layout */
+.login-form-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto; /* Centers the box horizontally within the list column */
+  border: 1px solid #d3d3d3; /* Soft gray outer framework container line */
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+/* Form Title Header (Aligned with the narrow inputs center axis) */
+.login-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 25px;
+  width: 180px; /* Matches the input block width to center nicely over it */
+  text-align: center;
+}
+
+/* Individual Stack Columns for Form Elements */
+.login-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* Bold Sans-Serif Field Title Labels */
+.login-field-group label {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Narrow Rounded Input Fields matching design proportions */
+.login-field-group input {
+  width: 180px; /* Fixed compact size creates the empty space layout layout look on the right side */
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px; /* Distinct pill-box styling corner curves */
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Bright Blue Interactive Action Call-To-Action Button Block */
+.login-btn {
+  width: 180px; /* Matches explicit input columns widths */
+  background-color: #007bff; /* True vibrant royal blue brand fill tone */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3; /* Interactive rich darkening shift on hover pass */
+}
+
+/* Centered Hyperlink Accent Component under button axis */
+.forgot-link {
+  width: 180px; /* Shared axis alignment bounds */
+  text-align: center;
+  color: #007bff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline; /* Standard navigation path signifier link line toggle */
+}
+
+/* Question 3: Gallery Center-Alignment Wrapper Matrix Box */
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all header, nav, and grid elements horizontally */
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto; /* Master horizontal boundary center align */
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+/* Elegant Bold Serif Main Title text styling */
+.gallery-header {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Filtering Categories Navigation Row Row Layout */
+.gallery-filter-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Clean spacing separation layout footprint between link items */
+  margin-bottom: 35px;
+}
+
+/* Base Filter Link Anchor Text properties */
+.filter-link {
+  font-size: 1rem;
+  color: #4a5568;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  transition: all 0.2s ease;
+}
+
+/* Active Highlight Filter State (The "All" Button matching your screenshot) */
+.active-filter {
+  background-color: #007bff; /* True vibrant brand blue fill overlay */
+  color: #ffffff !important; /* High contrast crisp white label text layers */
+  font-weight: bold;
+}
+
+/* Responsive 3-Column Aspect-Ratio Constraint Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(100px, 1fr)
+  ); /* Auto-scaling 3 columns fluid footprint matrix */
+  gap: 20px; /* Gaps matching grid spaces */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Standalone Photo Placeholder Card Block Matrix item layout */
+.gallery-card {
+  background-color: #cccccc; /* Soft visual placeholder gray color blend match */
+  aspect-ratio: 1 / 1; /* STRICT REQUIREMENT: Enforces a perfect square framework profile layout */
+  border-radius: 12px; /* Soft pillowy structural corners rounding matches blueprint view */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Faint ambient shadow boundary line drop */
+  box-sizing: border-box;
+}
+
+/* Soft Inner text descriptors overlay settings */
+.gallery-card span {
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  color: #94a3b8; /* Light gray internal typography tint matches rendering layout colors */
+}
+
+/* Small Viewports Media Layout Overrides */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(130px, 1fr)
+    ); /* Clean auto wrap layout safely updates fallback grid grids */
+  }
+}
+
+/* Question 4: Pricing Matrix Center-Alignment Layout Box */
+.pricing-table-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* CRITICAL: Wraps cards vertically on small mobile viewports */
+  justify-content: center; /* True horizontal alignment alignment centering matrix */
+  gap: 24px; /* Consistent side-by-side gap layout space */
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto; /* Master horizontal boundary center align */
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+/* Individual Plan Card Shell Framework */
+.price-card {
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0; /* Very soft light frame layout line matching image design */
+  border-radius: 6px;
+  padding: 35px 25px;
+  width: 230px; /* Clean fixed width parameter for a balanced column layout profile */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Text alignments remain flush left to internal box boundaries */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02); /* Faint ambient shadow boundary drop */
+  box-sizing: border-box;
+}
+
+/* 1 Month Free Thin Accent Badge Banner Label Component */
+.badge-box {
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+}
+
+/* Bold Main Heading Plan Name */
+.plan-name {
+  font-family:
+    "Times New Roman", Times, serif; /* Serif typography matches image rendering style */
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 6px 0;
+}
+
+/* Plain Subordinate Plan Pricing Text Indicator */
+.plan-cost {
+  font-family: Arial, sans-serif;
+  font-size: 0.92rem;
+  color: #4a5568;
+  margin-bottom: 15px;
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Dark Grey Structural Separation Line Rule Layer */
+.card-divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #718096; /* Matches the clean crisp line sitting below pricing */
+  margin: 0 0 10px 0;
+}
+
+/* Feature Unordered List Line Tracking Spacers */
+.feature-lines {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* Even spacing distance between line rows */
+  width: 100%;
+}
+
+/* Individual Feature Paragraph Text */
+.feature-lines li {
+  font-family:
+    "Times New Roman", Times, serif; /* True serif font selection matching image blueprint */
+  font-size: 0.93rem;
+  color: #4a5568;
+  line-height: 1.3;
+}
+
+/* Pill-Shaped Solid Charcoal Action Call-to-Action Buttons */
+.signup-btn {
+  background-color: #1a1a1a; /* True deep charcoal solid container shade match */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px; /* Soft capsule curved design element */
+  padding: 6px 13px;
+  font-family: Arial, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+.signup-btn:hover {
+  background-color: #333333; /* Subtle brightness pass on cursor hover interactive matrix toggle */
+}
+
+/* Question 5: Review Order Framework Card Layout */
+.review-order-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto; /* Centers the box horizontally within the list column */
+  border: 5px solid #00be5c; /* True vibrant emerald green exterior layout boundary border */
+  padding: 35px 25px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Bold Main Title Text Styling Layout Block */
+.order-title {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900; /* Extra bold structural text presentation profile */
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Base Layout Row Rule Spacing Settings Shared across Columns */
+.order-table-header,
+.product-item-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Upper Column Header Category Typography Labels */
+.order-table-header {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+/* Column Alignment Fixed Grid Parameters */
+.col-item {
+  width: 70%;
+  text-align: left;
+}
+.col-qty {
+  width: 10%;
+  text-align: center;
+}
+.col-total {
+  width: 20%;
+  text-align: right;
+}
+
+/* Item Listing Rows Styling Properties */
+.product-item-row {
+  margin-bottom: 30px;
+}
+
+/* Left alignment column wrapping text along with image boxes */
+.product-visual-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 70%;
+}
+
+/* 50x50 Gray Thumbnail Block Graphic Container Layout */
+.item-thumb-box {
+  width: 50px;
+  height: 50px;
+  background-color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.item-thumb-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Paragraph layout descriptions copy formatting blocks */
+.item-description-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-main-title {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.item-sub-details {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #000000;
+  margin: 0;
+}
+
+/* Middle Quantity Text Box Label Data Parameters */
+.item-qty-value {
+  width: 10%;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  padding-top: 10px; /* Aligns vertically with the top line of the thumbnail element grid */
+}
+
+/* Right Side Pricing Total Currency Values Column Block */
+.item-total-value {
+  width: 20%;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: right;
+  padding-top: 10px; /* Aligns vertically with the top line of the thumbnail element grid */
+}
+
+/* Summary Math Grid Stack Structure Area Layout */
+.pricing-breakdown-matrix {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Horizontal spacing row row container alignment */
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.breakdown-label {
+  text-align: left;
+}
+.breakdown-price {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Grand Total Specific Font Weights Scaling Highlight row */
+.total-highlight-row {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 4px; /* Creates extra architectural tracking distance above final row total summary data line */
+}
+
+.total-highlight-row .breakdown-label {
+  font-weight: bold;
+}
+
+/* Solid Vibrant Emerald Green Action Placement Button Component Block */
+.place-order-btn {
+  width: 100%;
+  background-color: #00be5c; /* True matching brand solid fill tone matches exterior layout borders */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #009e4b; /* Safe interactive hover contrast dim adjustment toggle */
+}
+
+/* Fine-Print Serif Text Layout Descriptor Label Overlay Element */
+.security-footer-tag {
+  font-family:
+    "Times New Roman", Times, serif; /* Elegant high contrast serif typeface selection */
+  font-size: 1.15rem;
+  font-style: italic; /* Clean cursive slanted profile match */
+  color: #000000;
+  text-align: center;
+  width: 100%;
+}
