@@ -1,0 +1,572 @@
+/* ==========================================================================
+   1. GLOBAL SYSTEM CONFIGURATIONS & RESET UTILITIES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #fcfcfc;
+  color: #333333;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.assignment-wrapper {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111111;
+  border-bottom: 3px solid #111111;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.hw-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hw-label {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #444444;
+  line-height: 1.5;
+}
+
+/* Shared Utility Layout Helpers */
+.display-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.green-bg {
+  background-color: #006400 !important;
+}
+
+/* ==========================================================================
+   2. CHALLENGE SPECIFIC IMPLEMENTATION BLOCKS
+   ========================================================================== */
+
+/* Questions 1 & 2: Base Dimensional Block Frame Setup */
+.box-300 {
+  width: 300px;
+  height: 300px;
+  background-color: #dbdbdb;
+}
+
+.box-100 {
+  width: 100px;
+  height: 100px;
+}
+
+/* Question 3: Uniform Cream Navigation Bar Element */
+.top-divider-line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: -10px;
+  background-color: #000000;
+}
+.breadcrumb-nav {
+  display: flex;
+  width: 100%;
+  background-color: #fdf5e6;
+  border: 1px solid #000;
+}
+
+.crumb-item {
+  flex: 1;
+  text-align: center;
+  padding: 12px 8px;
+  font-size: 0.95rem;
+  color: #333333;
+  border-right: 1px solid #000;
+}
+
+.crumb-item:last-child {
+  border-right: none;
+}
+
+/* Challenge 3b: Staggered Multi-Row Grid Master Frame Box */
+.grid-wrap-container {
+  display: grid;
+  /* Uses a 6-column grid system (LCM of 2 and 3) to allow unequal box splitting */
+  grid-template-columns: repeat(6, 75px);
+  border: 2px solid #000000;
+  width: fit-content;
+  background-color: #000000; /* Acts as the thick solid background color for interior border lines */
+  gap: 2px; /* Forms uniform inner grid lines without layout overlapping */
+}
+
+/* Individual Content Display Grid Blocks */
+.grid-cell {
+  background-color: #fbfbe3; /* Cream color fill theme matching your target blueprint design */
+  color: #000000;
+  padding: 16px 14px;
+  text-align: left; /* Keeps text alignment neatly pinned left */
+  font-size: 1.5rem;
+  font-weight: normal; /* Standard font thickness profile */
+  box-sizing: border-box;
+}
+
+/* Row 1 Positioning: Three blocks splitting 6 columns equally (2 slots per box) */
+.cell-home {
+  grid-column: span 2;
+}
+
+.cell-about {
+  grid-column: span 2;
+}
+
+.cell-products {
+  grid-column: span 2;
+}
+
+/* Row 2 Positioning: Two blocks splitting 6 columns equally (3 slots per box) */
+.cell-cart {
+  grid-column: span 3;
+}
+
+.cell-wishlist {
+  grid-column: span 3;
+}
+
+/* Question 4: Clean Profile Presentation Stack Card */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  padding: 25px 15px;
+  background-color: #ffffff;
+  border: 1px solid #e18f0b;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.avatar-circle {
+  margin-bottom: 30px;
+}
+.avatar-circle img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+}
+
+.profile-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 15px;
+}
+
+.profile-title {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+/* Question 5: Feature Spotlight Blog Post Module Box */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  width: 240px; /* Scaled down width constraint layout profile framework */
+  background-color: #ffffff; /* Swapped to matching crisp white background color profile */
+  border: 1px solid #dcdcdc; /* Thin neutral card separator box outline */
+  border-radius: 4px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Bold Capitalized Header Style Text Element Block */
+.course-title {
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222222;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* 150x150 Gray Image Canvas Presentation Box Layout Frame */
+.blog-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* Constrains internal placeholder image content size values perfectly */
+.blog-image-placeholder img {
+  object-fit: contain;
+}
+
+/* Balanced paragraphs paragraph layout description copy formatting rules */
+.blog-text {
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem; /* Clean compact body text scale choice */
+  line-height: 1.4;
+  color: #000000; /* True deep contrast font layer tint color matches */
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* Soft light-cream yellow Action call-to-action anchor label element */
+.enroll-btn {
+  font-family: Arial, sans-serif;
+  font-size: 0.88rem;
+  background-color: #fbfbe3; /* Warm cream/yellow label style accent fill tone matches design panel */
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  border-radius: 2px;
+}
+
+/* Question 6: Horizontal product layout card card with strict max-width constraints */
+.horizontal-card {
+  display: flex;
+  gap: 20px;
+  max-width: 400px; /* STRICT REQUIREMENT: Limits structural growth boundary cap */
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc; /* Thin gray exterior box layout line */
+  padding: 20px;
+  align-items: flex-start; /* Top aligns the text and image components */
+  box-sizing: border-box;
+}
+
+/* 150x150px Sized Thumbnail Image Box Frame Grid Container */
+.thumb-square {
+  width: 150px; /* Exact scale assignment to fit 150x150 dimensions */
+  height: 150px;
+  /* background-color: #cccccc; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents flex calculations from shrinking the square */
+}
+
+.thumb-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Right Content Column Information Pillar Stack Frame Box */
+.card-details-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px; /* Matches the exact height dimension line of the image block */
+  box-sizing: border-box;
+}
+
+/* Serif Styled Product Name Heading Row Label */
+.product-header {
+  font-family:
+    "Times New Roman", Times, serif; /* True serif font selection matching image blueprint */
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+/* Balanced Text Paragraph Copy Frame Box Block */
+.product-desc {
+  font-family:
+    "Times New Roman", Times, serif; /* True serif font selection matching image blueprint */
+  font-size: 0.95rem;
+  color: #000000;
+  line-height: 1.25;
+  margin: 0;
+}
+
+/* Full Width Primary Action Call-To-Action Button Row Accent Frame */
+.action-btn {
+  width: 100%; /* Expands out to fill the entire horizontal space of text block */
+  background-color: #07ffff; /* True blue solid fill overlay button tone profile matches */
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-family:
+    Arial, sans-serif; /* High contrast clean sans-serif type choice */
+  font-size: 0.9rem;
+  font-weight: normal;
+  border-radius: 0; /* Resets standard borders down to strict right-angles */
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Question 7: Testimonial Card Container Shell Matrix Box Layout */
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Spacing between the quote text and user layout footer row */
+  max-width: 400px; /* STRICT REQUIREMENT: Caps structural growth threshold */
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3; /* Thin light gray border frame bounding wrapper */
+  padding: 35px 25px; /* Extended inner spacing footprint */
+  box-sizing: border-box;
+}
+
+/* Serif Styled Testimonial Quotation Text Element */
+.quote-text {
+  font-family:
+    "Times New Roman", Times, serif; /* Serif typography matches image rendering style */
+  font-size: 0.93rem;
+  color: #000000;
+  line-height: 1.4;
+  margin: 0;
+  text-align: left;
+}
+
+/* User Identity Row Alignment Container */
+.user-meta-row {
+  display: flex;
+  align-items: center; /* Centers circle avatar and username name text vertically */
+  gap: 15px; /* Gap between circular avatar plate and font element labels */
+}
+
+/* 50x50px Gray Circle Avatar Mask Graphic Container */
+.testimonial-avatar {
+  width: 50px; /* Exact dimensional scale matching image specifications */
+  height: 50px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Serif Styled User Name Title Row Label Component */
+.user-name {
+  font-family:
+    "Times New Roman", Times, serif; /* Matches matching typography style sheet specifications */
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Questions 8 & 9: Modular Adaptive Plan Pricing Structures */
+.pricing-matrix {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 25px 20px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.plan-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.plan-divider-line {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: #d6d6d6;
+}
+
+.orange-theme .plan-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ff8c00;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.card-pera {
+  padding-bottom: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.card-title {
+  padding-bottom: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.orange-theme .plan-price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #ff8c00;
+  margin-bottom: 6px;
+}
+
+.plan-features {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-features li {
+  font-size: 0.9rem;
+  color: #4a5568;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.plan-features li:last-child {
+  border-bottom: none;
+}
+
+.orange-theme .plan-btn {
+  width: 100%;
+  background-color: #ff8c00;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Question 10: Multi-Column Coral Fluid Row */
+/* Challenge 10: Coral footer master container box with vertical wrapping layout flow */
+.fluid-row-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Spacing between the columns and the bottom copyright text */
+  width: 100%;
+  background-color: #f2736b; /* Vibrant coral background color matching the image design */
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+/* Horizontal line flex wrapper layout container for the navigation link pillars */
+.footer-columns-wrap {
+  display: flex;
+  flex-wrap: wrap; /* CRITICAL: Allows column containers to wrap onto new lines */
+  gap: 20px;
+}
+
+/* Individual links column matrix tracking settings */
+.fluid-col {
+  flex: 1;
+  min-width: 200px; /* STRICT REQUIREMENT: Prevents columns from squeezing below 200px */
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Vertical spacing between each individual hyperlink */
+  background-color: transparent; /* Removed previous white box block background */
+  padding: 0;
+  border: none; /* Removed previous decorative box frames */
+}
+
+/* Clean White Serif Typography Links Style Layer */
+.fluid-col a {
+  font-family:
+    "Times New Roman", Times, serif; /* Serif typography matches image rendering style */
+  color: #ffffff; /* White font text color matches */
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Bottom Left Standing Copy Banner Frame Box Component */
+.footer-copyright {
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Question 11: Multi-Column Vertical Multi-Tier Stack Panel */
+.fluid-col-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Direct gap between column group and copyright text */
+  width: max-content;
+  background-color: #f2736b; /* Coral background matching the image */
+  padding: 40px 35px;
+  box-sizing: border-box;
+}
+
+/* Flex Wrapper for Columns */
+.footer-col-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Allows columns to drop down when screen narrows */
+  gap: 30px 20px; /* 30px vertical gap when wrapped, 20px horizontal gap when side-by-side */
+}
+
+/* Individual Links Columns */
+.fluid-colm {
+  flex: 1;
+  min-width: 200px; /* Enforces wrapping behavior below 200px per item */
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Tight spacing between link lines inside a column */
+}
+
+/* Links Styling */
+.fluid-colm a {
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+/* Bottom Copyright Section */
+.footer-col-copyright {
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  font-size: 1.15rem;
+  text-align: left;
+  margin-top: 10px; /* Gives padding above the copyright text */
+}

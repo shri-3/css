@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Homework 3 Solutions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="assignment-wrapper">
+      <h1 class="main-title">CSS_HW3</h1>
+
+      <!-- CHALLENGE 1: Vertically Centered Left Box -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          1. Create a 300x300 px container with a box of 100x100px vertically
+          aligned at the center to the left.
+        </h2>
+        <div class="box-300 display-flex align-center justify-start">
+          <div class="box-100 green-bg"></div>
+        </div>
+      </section>
+
+      <!-- CHALLENGE 2: Perfectly Centered Box -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          2. Create a 300x300 px container with a centered box of 100x100px
+          inside it.
+        </h2>
+        <div class="box-300 display-flex align-center justify-center">
+          <div class="box-100 green-bg"></div>
+        </div>
+      </section>
+
+      <!-- CHALLENGE 3: Uniform Breadcrumbs Bar -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          3. Make a responsive navbar such that each item take 1 proportion on
+          the entire space and the items wrap on reducing the screen size.
+        </h2>
+        <!-- Top Horizontal Divider Rule Line -->
+        <div class="top-divider-line"></div>
+        <nav class="breadcrumb-nav">
+          <div class="crumb-item">Home</div>
+          <div class="crumb-item">About</div>
+          <div class="crumb-item">Products</div>
+          <div class="crumb-item">Cart</div>
+          <div class="crumb-item">Wishlist</div>
+        </nav>
+      </section>
+
+      <!-- CHALLENGE 3b: Grid Word Wrap Block -->
+      <section class="hw-item">
+        <h2 class="hw-label">Grid Word Wrap Layout</h2>
+        <div class="grid-wrap-container">
+          <div class="grid-cell cell-home">home</div>
+          <div class="grid-cell cell-about">about</div>
+          <div class="grid-cell cell-products">products</div>
+          <div class="grid-cell cell-cart">cart</div>
+          <div class="grid-cell cell-wishlist">wishlist</div>
+        </div>
+      </section>
+
+      <!-- CHALLENGE 4: User Profile Card Component -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          4. Create a profile card as shown below. Width of the card is 200px.
+        </h2>
+        <div class="profile-card">
+          <!-- Kept the image source container but constrained sizes cleanly via CSS layout classes -->
+          <div class="avatar-circle">
+            <img src="https://placehold.co/150x150?text=150x150" />
+          </div>
+          <div class="profile-name">John Doe</div>
+          <div class="profile-title">Web Developer</div>
+        </div>
+      </section>
+
+      <!-- CHALLENGE 5: Blog Article Feature Block Layout -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          5. Create a course card like below using CSS flexbox. Use the
+          placeholder for image:
+        </h2>
+        <div class="blog-card">
+          <h3 class="course-title">FULL STACK COURSE</h3>
+
+          <div class="blog-image-placeholder">
+            <img src="https://placehold.co/230x230?text=150x150" />
+          </div>
+
+          <p class="blog-text">
+            Discover the neoG Full Stack Development Course, offering expert-led
+            training in MERN stack. Build real-world projects and boost your web
+            development career.
+          </p>
+
+          <div class="enroll-btn">Enroll Now</div>
+        </div>
+      </section>
+
+      <!-- CHALLENGE 6: Action Product Display Layout Block -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          6. Create a product card like below. Maximum width of the product card
+          in 400px.
+        </h2>
+        <div class="horizontal-card">
+          <!-- Gray Square Canvas with 150x150 Image Container -->
+          <div class="thumb-square">
+            <img src="https://placehold.co/150x150?text=150x150" />
+          </div>
+
+          <!-- Right Details Side Stack Column -->
+          <div class="card-details-side">
+            <h3 class="product-header">Product Name</h3>
+            <p class="product-desc">
+              Product description goes here. It's a brief summary of the product
+              features.
+            </p>
+            <button class="action-btn">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hw-item">
+        <h2 class="hw-label">
+          7. Create a testimonial card as shown below. Maximum width of the card
+          is 400px.
+        </h2>
+
+        <div class="testimonial-card">
+          <!-- Quote Text Block -->
+          <p class="quote-text">
+            "This product is amazing! Highly recommended."
+          </p>
+
+          <!-- User Meta Info Footer Row Container -->
+          <div class="user-meta-row">
+            <div class="testimonial-avatar">
+              <img src="https://placehold.co/50x50?text=50x50" />
+            </div>
+            <div class="user-name">Jane Doe</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGE 8: Single Standalone Pricing Plan Block Layout -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          8. Create a pricing card as shown below. Card width is 200px.
+        </h2>
+        <div class="pricing-card orange-theme">
+          <div class="plan-title">BASIC</div>
+          <div class="plan-price">$10.99/month</div>
+          <div class="plan-divider-line"></div>
+          <p class="card-pera">Our Basic plan is perfect for small teams.</p>
+          <ul class="plan-features">
+            <li>5 Project</li>
+            <li>10GB Storage</li>
+            <li>Priority Support</li>
+            <li>Unlimited Users</li>
+          </ul>
+          <button class="plan-btn">Buy Plan</button>
+        </div>
+      </section>
+
+      <!-- CHALLENGE 9: Triple-Column Tier Plan Matrix -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          9. Create a row of pricing cards as shown below. Cards width are 200px
+          each. On reducing the screen size, cards should wrap one below the
+          other.
+        </h2>
+        <div class="pricing-matrix">
+          <!-- Card 1 -->
+          <div class="pricing-card orange-theme">
+            <div class="plan-title">BASIC</div>
+            <div class="plan-price">$19.99/month</div>
+            <div class="plan-divider-line"></div>
+            <p class="card-title">Our Basic plan is perfect for small teams.</p>
+            <ul class="plan-features">
+              <li>5 Project</li>
+              <li>10GB Storage</li>
+              <li>Priority Support</li>
+              <li>Unlimited Users</li>
+            </ul>
+            <button class="plan-btn">Buy Plan</button>
+          </div>
+          <!-- Card 2 -->
+          <div class="pricing-card orange-theme">
+            <div class="plan-title">Silver</div>
+            <div class="plan-price">$14.99/month</div>
+            <div class="plan-divider-line"></div>
+            <p class="card-title">
+              Our silver plan is perfect for small to medium size teams.
+            </p>
+            <ul class="plan-features">
+              <li>10 Project</li>
+              <li>15GB Storage</li>
+              <li>Priority Support</li>
+              <li>Unlimited Users</li>
+            </ul>
+            <button class="plan-btn">Buy Plan</button>
+          </div>
+          <!-- Card 3 -->
+          <div class="pricing-card orange-theme">
+            <div class="plan-title">PREMIUM</div>
+            <div class="plan-price">$99.99/month</div>
+            <div class="plan-divider-line"></div>
+            <p class="card-title">
+              Our premium plan is perfect for big size teams.
+            </p>
+            <ul class="plan-features">
+              <li>30 Project</li>
+              <li>20GB Storage</li>
+              <li>Priority Support</li>
+              <li>Unlimited Users</li>
+            </ul>
+            <button class="plan-btn">Buy Plan</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGE 10: Multi-Column Fluid Data Layout Row -->
+      <section class="hw-item">
+        <h2 class="hw-label">
+          10. Create a footer as shown below. Minimum width of each footer
+          column should be 200px. On reducing the screen size the the columns
+          should wrap one below the other.
+        </h2>
+        <footer class="fluid-row-container">
+          <!-- Links Columns Area -->
+          <div class="footer-columns-wrap">
+            <div class="fluid-col">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms</a>
+              <a href="#">Legal</a>
+            </div>
+            <div class="fluid-col">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="fluid-col">
+              <a href="#">Photos</a>
+              <a href="#">Testimonial</a>
+            </div>
+          </div>
+
+          <!-- Copyright Text Row -->
+          <div class="footer-copyright">
+            2024 Design Studio. All rights reserved.
+          </div>
+        </footer>
+      </section>
+
+      <!-- CHALLENGE 11: Multi-Column Vertical Multi-Tier Blocks Grid Layout -->
+      <section class="hw-item">
+        <h2 class="hw-label">On reducing the screen size:</h2>
+        <footer class="fluid-col-container">
+          <!-- Links Columns Area -->
+          <div class="footer-col-wrap">
+            <div class="fluid-colm">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms</a>
+              <a href="#">Legal</a>
+            </div>
+            <div class="fluid-colm">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="fluid-colm">
+              <a href="#">Photos</a>
+              <a href="#">Testimonial</a>
+            </div>
+          </div>
+
+          <!-- Copyright Text Row -->
+          <div class="footer-col-copyright">
+            2024 Design Studio. All rights reserved.
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
