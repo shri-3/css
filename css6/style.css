@@ -1,0 +1,17 @@
+h1 {
+  text-decoration: underline;
+}
+
+body {
+  background-color: aqua;
+}
+@media (max-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media (width: 750px) {
+  body {
+    background-color: white;
+  }
+}
