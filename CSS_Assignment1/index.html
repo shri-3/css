@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost Blog Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome used for social share icons / brand assets -->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- 1. MASTER SITE NAVIGATION HEADER -->
+    <header class="global-navbar">
+      <div class="nav-left-links">
+        <a href="#" class="nav-link active">HOME</a>
+        <a href="#" class="nav-link">TAG</a>
+        <a href="#" class="nav-link">AUTHOR</a>
+        <a href="#" class="nav-link">HELP</a>
+      </div>
+      <div class="nav-right-actions">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fas fa-moon"></i></a>
+        <a href="#" class="subscribe-btn">Subscribe</a>
+      </div>
+    </header>
+
+    <!-- 2. MAIN BRAND LOGO BILLBOARD HERO BANNER -->
+    <section class="brand-billboard">
+      <div class="brand-logo-wrap">
+        <img src="./images/slider.png" />
+        <p class="brand-tagline">Thoughts, stories, and ideas.</p>
+      </div>
+    </section>
+
+    <!-- MAIN ARTICLES FEED CONTENT WRAPPER -->
+    <main class="feed-container">
+      <!-- 3. FEATURED SPOTLIGHT ARTICLE (ROW VIEW) -->
+      <article class="featured-story">
+        <div class="featured-media-frame">
+          <img src="./images/ghostImage1.png" />
+        </div>
+        <div class="featured-text-frame">
+          <span class="category-tag">GETTING STARTED</span>
+          <h2 class="article-title large-title">Welcome to Ghost</h2>
+          <p class="article-excerpt">
+            Welcome, it's great to have you here. We know that first impressions
+            are important, so we've populated your new site with some initial
+            getting started posts that will help you get familiar with
+            everything in no time.
+          </p>
+          <footer class="author-meta-row">
+            <div class="author-badge-circle">
+              <img src="./images/smallLogo.png" />
+            </div>
+            <div class="meta-details">
+              <span class="author-name">GHOST</span>
+              <span class="publish-date">25 FEB 2020 • 1 MIN READ</span>
+            </div>
+          </footer>
+        </div>
+      </article>
+
+      <!-- 4. THREE-COLUMN ARTICLE GRID ROW -->
+      <section class="articles-grid-row">
+        <!-- Card 1 -->
+        <article class="story-card">
+          <div class="card-media-frame">
+            <img src="./images/ghostImage2.avif" />
+          </div>
+          <div class="card-text-frame">
+            <span class="category-tag">GETTING STARTED</span>
+            <h3 class="article-title">Writing posts with Ghost ✍️</h3>
+            <p class="article-excerpt">
+              Discover familiar formatting options in a functional toolbar and
+              the ability to add dynamic content seamlessly.
+            </p>
+            <footer class="author-meta-row">
+              <div class="author-badge-circle">
+                <img src="./images/smallLogo.png" />
+              </div>
+              <div class="meta-details">
+                <span class="author-name">GHOST</span>
+                <span class="publish-date">25 FEB 2020 • 3 MIN READ</span>
+              </div>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="story-card">
+          <div class="card-media-frame">
+            <img src="./images/ghostImage3.avif" />
+          </div>
+          <div class="card-text-frame">
+            <span class="category-tag">GETTING STARTED</span>
+            <h3 class="article-title">Publishing options</h3>
+            <p class="article-excerpt">
+              The Ghost editor post settings menu has everything you need to
+              fully optimize and distribute your content effectively.
+            </p>
+            <footer class="author-meta-row">
+              <div class="author-badge-circle">
+                <img src="./images/smallLogo.png" />
+              </div>
+              <div class="meta-details">
+                <span class="author-name">GHOST</span>
+                <span class="publish-date">25 FEB 2020 • 2 MIN READ</span>
+              </div>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="story-card">
+          <div class="card-media-frame">
+            <img src="./images/ghostImage4.avif" />
+          </div>
+          <div class="card-text-frame">
+            <span class="category-tag">GETTING STARTED</span>
+            <h3 class="article-title">Managing admin settings</h3>
+            <p class="article-excerpt">
+              There are a couple of things to do next while you're getting set
+              up: making your site private and inviting your team.
+            </p>
+            <footer class="author-meta-row">
+              <div class="author-badge-circle">
+                <img src="./images/smallLogo.png" />
+              </div>
+              <div class="meta-details">
+                <span class="author-name">GHOST</span>
+                <span class="publish-date">25 FEB 2020 • 2 MIN READ</span>
+              </div>
+            </footer>
+          </div>
+        </article>
+      </section>
+
+      <!-- 5. TWO-COLUMN EQUAL FOOTER ARTICLE ROW -->
+      <section class="articles-grid-row split-two">
+        <!-- Left Card -->
+        <article class="story-card horizontal-flex-desktop">
+          <div class="card-media-frame">
+            <img src="./images/ghostImage5.avif" />
+          </div>
+          <div class="card-text-frame">
+            <span class="category-tag">GETTING STARTED</span>
+            <h3 class="article-title">Writing posts with Ghost ✍️</h3>
+            <p class="article-excerpt">
+              Discover familiar formatting options in a functional toolbar and
+              the ability to add dynamic content seamlessly.
+            </p>
+            <footer class="author-meta-row">
+              <div class="author-badge-circle">
+                <img src="./images/smallLogo.png" />
+              </div>
+              <div class="meta-details">
+                <span class="author-name">GHOST</span>
+                <span class="publish-date">25 FEB 2020 • 3 MIN READ</span>
+              </div>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Right Card -->
+        <article class="story-card horizontal-flex-desktop">
+          <div class="card-media-frame">
+            <img src="./images/ghostImage6.avif" />
+          </div>
+          <div class="card-text-frame">
+            <span class="category-tag">GETTING STARTED</span>
+            <h3 class="article-title">Publishing options</h3>
+            <p class="article-excerpt">
+              The Ghost editor post settings menu has everything you need to
+              fully optimize and distribute your content effectively.
+            </p>
+            <footer class="author-meta-row">
+              <div class="author-badge-circle">
+                <img src="./images/smallLogo.png" />
+              </div>
+              <div class="meta-details">
+                <span class="author-name">GHOST</span>
+                <span class="publish-date">25 FEB 2020 • 2 MIN READ</span>
+              </div>
+            </footer>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
