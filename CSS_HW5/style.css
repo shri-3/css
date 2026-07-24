@@ -1,0 +1,77 @@
+h1 {
+  text-decoration: underline;
+}
+
+body {
+  background-color: aqua;
+}
+
+/* Question 1: */
+@media (max-width: 800px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+/* Question 2: */
+@media (min-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* Question 3: */
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Question 4: */
+@media (min-height: 700px) {
+  p {
+    color: blue;
+  }
+}
+
+/* Question 5: */
+@media (min-width: 1000px) {
+  header {
+    background-color: green;
+  }
+}
+
+/* Question 6: */
+@media (max-height: 500px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Question 7: */
+@media (width: 1024px) {
+  footer {
+    text-align: center;
+  }
+}
+
+/* Question 8: */
+@media (max-width: 400px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Question 9: */
+@media (min-width: 600px) and (max-width: 900px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Question 10: */
+@media (min-width: 1000px) {
+  a {
+    color: orange;
+  }
+}
